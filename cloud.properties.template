@@ -1,0 +1,14 @@
+bootstrap.servers=pkc-...
+
+ssl.endpoint.identification.algorithm=https
+sasl.mechanism=PLAIN
+security.protocol=SASL_SSL
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username=''   password='';
+client.dns.lookup=use_all_dns_ips
+
+schema.registry.url=https://psrc...
+schema.registry.basic.auth.user.info=<sr-key>:<sr-secret>
+basic.auth.credentials.source=USER_INFO
+
+client.id=ProducerApp
+

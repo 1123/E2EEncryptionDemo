@@ -1,0 +1,11 @@
+Caused by: io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Upgrade to Stream Governance Advanced package to use schema rules; error code: 40302
+
+==> Need to enable the package for the environment of the cluster
+
+Caused by: io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: The schema has embedded tags that do not exist, please create them: [PII]; error code: 42250
+
+==> Need to create the tag. The preconfigured one works fine. 
+
+[2023-05-21 10:24:45,780] ERROR Error when sending message to Atopic test-ssn with key: null, value: 58 bytes with error: (org.apache.kafka.clients.producer.internals.ErrorLoggingCallback:52)
+
+==> Need to create the topic
